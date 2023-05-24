@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo">COFFEE HOUSE</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="order">
+            <form class="customer">
+                <input type="text" class="customer__input" placeholder="Введите фамилию" id="surname">
+                <input type="text" class="customer__input" placeholder="Введите имя" id="name">
+            </form>
+
+            <form class="menu">
+                <div class="coffee">
+                    <input type="checkbox" class="coffee__checkbox" id="espresso_cb" value="80">
+                    <label for="espresso_cb" class="coffee__label">Эспрессо 80р.</label>
+                    <input type="text" class="coffee__input" id="espresso" placeholder="0" value="0">
+                </div>
+
+                <div class="coffee">
+                    <input type="checkbox" class="coffee__checkbox" id="latte_cb" value="110">
+                    <label for="latte_cb" class="coffee__label">Латте 110р.</label>
+                    <input type="text" class="coffee__input" id="latte" placeholder="0" value="0">
+                </div>
+
+                <div class="coffee">
+                    <input type="checkbox" class="coffee__checkbox" id="cappuccino_cb" value="120">
+                    <label for="cappuccino_cb" class="coffee__label">Капучино 120р.</label>
+                    <input type="text" class="coffee__input" id="cappuccino" placeholder="0" value="0">
+                </div>
+
+                <div class="coffee">
+                    <input type="checkbox" class="coffee__checkbox" id="americano_cb" value="90">
+                    <label for="americano_cb" class="coffee__label">Американо 90р.</label>
+                    <input type="text" class="coffee__input" id="americano" placeholder="0" value="0">
+                </div>
+
+                <div class="coffee">
+                    <input type="checkbox" class="coffee__checkbox" id="choco_cupcake_cb" value="80">
+                    <label for="choco_cupcake_cb" class="coffee__label">Шоколадный кекс 80р.</label>
+                    <input type="text" class="coffee__input" id="choco_cupcake" placeholder="0" value="0">
+                </div>
+
+                <div class="coffee">
+                    <input type="checkbox" class="coffee__checkbox" id="blue_cupcake_cb" value="90">
+                    <label for="blue_cupcake_cb" class="coffee__label">Черничный кекс 90р.</label>
+                    <input type="text" class="coffee__input" id="blue_cupcake" placeholder="0" value="0">
+                </div>
+
+                <div class="coffee">
+                    <input type="checkbox" class="coffee__checkbox" id="apple_pie_cb" value="100">
+                    <label for="apple_pie_cb" class="coffee__label">Яблочный тарт 100р.</label>
+                    <input type="text" class="coffee__input" id="apple_pie" placeholder="0" value="0">
+                </div>
+            </form>
+
+            <p class="total">Итого: <span class="cost">0</span> р.</p>
+
+            <button class="order__btn" onclick="orderModal()">Оформить заказ</button>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
